@@ -1,0 +1,348 @@
+﻿/* ✅ Validation */
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+/* ✅ Navigation */
+.nav-link.active {
+    font-weight: bold;
+    color: #0d6efd !important; /* iPerfect blue */
+    background-color: #e9f2ff; /* subtle highlight */
+    border-radius: 4px;
+    padding-left: 0.75rem;
+}
+
+.navbar.fixed-bottom .nav-link.active {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 6px;
+}
+
+/* Hero section */
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("images/hero-pattern.svg") repeat;
+        opacity: 0.08;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .hero p.lead {
+        font-size: 1.3rem;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+/* Section dividers */
+section + section::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: url("images/wave-divider.svg") no-repeat center bottom;
+    background-size: cover;
+}
+
+/* Carousel */
+.carousel .card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .carousel .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.2);
+    }
+
+    .carousel .card img {
+        max-height: 280px;
+        object-fit: cover;
+    }
+
+.carousel-indicators [data-bs-target] {
+    background-color: #0d6efd;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Features grid */
+.container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card {
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    }
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card i {
+    transition: transform 0.3s ease;
+}
+
+.card:hover i {
+    transform: scale(1.2);
+}
+
+/* Buttons */
+.btn-sm, .btn-lg {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+    .btn-sm:hover, .btn-lg:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.2);
+    }
+
+/* Signature */
+.signature-font {
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #0d6efd;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+/* Animations */
+.animate-fadein {
+    animation: fadein 1.2s ease-in-out;
+}
+
+.animate-fadein-delay {
+    animation: fadein 1.8s ease-in-out;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+.animate-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.15);
+}
+
+/* Keyframes */
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+/* Navbar */
+.navbar {
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #6610f2 !important;
+    }
+
+/* Footer */
+.footer {
+    background: #f8f9fa;
+    font-size: 0.9rem;
+}
+
+    .footer .signature-font {
+        font-size: 1.2rem;
+        color: #0d6efd;
+    }
+
+    .footer small {
+        display: block;
+        margin-top: 0.25rem;
+        color: #6c757d;
+    }
+/* Sidebar */
+.sidebar {
+    background: #fdfdfd;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-link {
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+    .sidebar-link:hover {
+        background-color: #e9f2ff;
+        color: #0d6efd;
+        transform: translateX(4px);
+    }
+
+    .sidebar-link.active {
+        font-weight: bold;
+        background-color: #0d6efd;
+        color: #fff !important;
+        box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    }
+
+/* Mobile Navbar */
+.mobile-nav {
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+}
+
+    .mobile-nav .nav-link {
+        font-size: 0.85rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+        .mobile-nav .nav-link:hover {
+            color: #ffc107 !important;
+            transform: translateY(-3px);
+        }
+
+        .mobile-nav .nav-link.active {
+            color: #fff !important;
+            font-weight: bold;
+            border-top: 2px solid #ffc107;
+        }
+/* Responsive navigation overrides to ensure only one navigation is visible per breakpoint */
+.top-header { display: none !important; }     /* tablet header */
+.sidebar { display: none !important; }        /* desktop sidebar */
+.mobile-nav { display: none !important; }     /* bottom mobile nav */
+
+/* Desktop: show sidebar from lg and up */
+@media (min-width: 992px) {
+    .sidebar { display: block !important; width: 260px; position: fixed; left: 0; top: 0; bottom: 0; z-index: 1020; }
+    main.container { margin-left: 280px; } /* leave room for sidebar */
+    .top-header { display: none !important; }
+    .mobile-nav { display: none !important; }
+}
+
+/* Tablet only: show top header (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .top-header { display: flex !important; }
+    .sidebar { display: none !important; }
+    main.container { margin-left: 0; }
+    .mobile-nav { display: none !important; }
+}
+
+/* Mobile: show bottom nav for small screens */
+@media (max-width: 767.98px) {
+    .mobile-nav { display: flex !important; }
+    .top-header { display: none !important; }
+    .sidebar { display: none !important; }
+    main.container { padding-bottom: 80px; } /* room for mobile nav */
+}
+
+/* Hero adjustments for small screens */
+@media (max-width: 767.98px) {
+    .hero { padding: 3rem 1rem; min-height: 55vh; }
+    .hero h1 { font-size: 2rem; }
+    .hero p.lead { font-size: 1rem; }
+}
+
+/* Ensure carousel items animate nicely and are responsive */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+/* Ensure hero decorative layer does not block pointer events and CTAs are on top */
+.hero {
+    position: relative; /* already set, but ensure it */
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.hero::before {
+    pointer-events: none; /* decorative overlay must not block clicks */
+}
+
+/* CTA buttons in hero should always be interactive */
+.hero .btn {
+    position: relative;
+    z-index: 1060;
+    pointer-events: auto;
+}
+
+/* Make sure navbars and sidebars have controlled z-index so they don't cover hero buttons */
+.top-header { z-index: 1030; }   /* tablet header */
+.sidebar    { z-index: 1020; }   /* desktop sidebar */
+.mobile-nav { z-index: 1040; }   /* bottom mobile nav */
+
+/* Ensure page content has room where fixed navbars exist */
+@media (max-width: 767.98px) {
+    main.container { padding-bottom: 90px; } /* space for mobile bottom nav */
+}
+@media (min-width: 992px) {
+    main.container { margin-left: 280px; } /* space for desktop sidebar */
+}

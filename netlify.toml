@@ -1,0 +1,6 @@
+[build]
+  command = "dotnet publish -c Release -o build"
+  publish = "build/wwwroot"
+
+[build.environment]
+  DOTNET_VERSION = "8.0.100"

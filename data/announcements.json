@@ -1,0 +1,22 @@
+[
+  {
+    "Title": "Quick Demo",
+    "Description": "Watch iPerfect instantly detect tampered images.",
+    "ImageUrl": "/images/image1.png"
+  },
+  {
+    "Title": "Latest News",
+    "Description": "iPerfect featured in global tech media for innovation.",
+    "ImageUrl": "/images/image2.png"
+  },
+  {
+    "Title": "Community",
+    "Description": "Join our growing community of creators and professionals.",
+    "ImageUrl": "/images/image3.png"
+  },
+  {
+    "Title": "Gallery",
+    "Description": "More examples of detection and results.",
+    "ImageUrl": "/images/image4.png"
+  }
+]
