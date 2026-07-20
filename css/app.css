@@ -60,7 +60,7 @@ section + section::before {
     display: block;
     width: 100%;
     height: 80px;
-    background: url("images/wave-divider.svg") no-repeat center bottom;
+    background: url("images/wave-divider.jpg") no-repeat center bottom;
     background-size: cover;
 }
 

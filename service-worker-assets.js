@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "1NLm05Se",
+  "version": "MJqwAQg9",
   "assets": [
     {
       "hash": "sha256-1BB7u9Dv4KPjJLI6yZYzVhS0giwx4piY74Fc/3gCTiM=",
@@ -598,7 +598,7 @@ self.assetsManifest = {
       "url": "_framework/netstandard.wasm"
     },
     {
-      "hash": "sha256-jqSHeL9fjSP9NL92ZUK5DRYa49bnv8KAmWCBbE3U59E=",
+      "hash": "sha256-QvcHuknmA2vTawOhvHiTwpaa4c0gik1h4jrCyH0Ixh4=",
       "url": "css/app.css"
     },
     {
@@ -650,6 +650,10 @@ self.assetsManifest = {
       "url": "images/iperfect.png"
     },
     {
+      "hash": "sha256-60+WU8mFRZ7dcbNCkQLGB0lSg3ABCZFUaW+Reo8xmzo=",
+      "url": "images/wave-divider.jpg"
+    },
+    {
       "hash": "sha256-7wx0eKYJbvPEZ3Ct72p5L6s0FgSP3eZQl9+Ji+jlybs=",
       "url": "index.html"
     },
@@ -674,7 +678,7 @@ self.assetsManifest = {
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-5MxcqRR1nMgsGJ/nfejU7X0SY8jnH+iBwZVU3L/gIPE=",
+      "hash": "sha256-qGSGd04WJytaNMbOUqnJEM6TMwWQZy5qrJT6ALRZ/Bg=",
       "url": "netlify.toml"
     }
   ]
