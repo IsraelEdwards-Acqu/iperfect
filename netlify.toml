@@ -1,6 +1,7 @@
 [build]
-  command = "dotnet publish -c Release -o build"
-  publish = "build/wwwroot"
+  command = ""        # no build step, just serve files
+  publish = "."       # or the folder where index.html lives
 
 [build.environment]
   DOTNET_VERSION = "8.0.100"
+
